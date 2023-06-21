@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="autorization.css">
+    <script src="autorization.js" defer></script>
+</head>
+<body>
+ <!-- Container -->
+ <article class="container">
+    <!-- Внутренний блок -->
+    <div class="block">
+        <section class="block_item block-item">
+            <h2 class="block-item_title">У вас уже есть аккаунт?
+            </h2>
+            <button class="block-item_btn signin-btn">Войти</button>
+        </section>
+        <section class="block_item block-item">
+            <h2 class="block-item_title">У вас нет аккаунта?</h2>
+            <button class="block-item_btn signup-btn">Зарегестрироваться</button>
+        </section>
+    </div>
+    <!-- блок формы -->
+    <div class="form-box">
+          <!-- signUp form -->
+          <form action="#" class="form form_signin">
+            <h3 class="form_title">Вход</h3>
+            <p>
+               <input type="text" class="form_input" placeholder="Логин">
+            </p>
+            <p>
+                <input type="password" class="form_input" placeholder="Пароль">
+            </p>
+            <p>
+                <button class="form_Btn">Войти</button>
+            </p>
+            <p>
+                <a href="#" class="form_forgot">Восстановить пароль</a>
+            </p>
+          </form>
+
+          <form action="#" class="form form_signup">
+            <h3 class="form_title">Регистрация</h3>
+            <p>
+               <input type="text" class="form_input" placeholder="Логин">
+            </p>
+            <p>
+                <input type="email" class="form_input" placeholder="email">
+             </p>
+            <p>
+                <input type="password" class="form_input" placeholder="Пароль">
+            </p>
+            <p>
+                <input type="password" class="form_input" placeholder="Подвердите пароль">
+            </p>
+            <p>
+                <button class="form_Btn form_btn_signup">Зарегестрироваться</button>
+            </p>
+           
+          </form>
+    </div>
+ </article>
+        
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Александров</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="header" class="header">
+    <div class="logo">
+      Лига Чемпионов
+    </div>
+    <input class="auth-button" type="button" value="Авторизация" onClick='location.href="file:///C:/Users/User/Desktop/Ice/autorizaton.html?#"'>
+    <button class="addButton">
+      
+    </div>
+      
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">&times;</span>
+    <form id="loginForm">
+      <label for="username">Имя пользователя:</label>
+      <input type="text" id="username" required>
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Войти</button>
+    </form>
+  </div>
+</div>
+  </div>
+
+  <nav class="navigation">
+    <ul>
+      <li><button class="nav-button active" onclick="openTab('homeTab')">Главная</button></li>
+      <li><button class="nav-button" onclick="openTab('teamsTab')" >Команды</button></li>
+      <li><button class="nav-button" onclick="openTab('playersTab')">Игроки</button></li>
+      <li><button class="nav-button" onclick="openTab('tableTab')">Таблица</button></li>
+      <li><button class="nav-button" onclick="openTab('statsTab')">Статистика</button></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div id="homeTab" class="tab-content">
+      <h2 style="    font-family: revert;
+      font-size: revert;
+      font-style: italic;">Главная</h2>
+      
+     
+      <p style="font-family: cursive;
+      font-size: larger;
+      font-style: italic;">Добро пожаловать на сайт Лиги Чемпионов!
+        Ли́га чемпио́нов УЕФА (англ. UEFA Champions League) — ежегодный международный турнир по футболу, организованный Союзом европейских футбольных ассоциаций (УЕФА) среди клубов высших дивизионов в Европе.
+
+Самый престижный европейский клубный футбольный турнир. Со своего первого розыгрыша в сезоне 1955/56 и по сезон 1991/92 назывался Кубком европейских чемпионов (англ. European Champion Clubs' Cup). В сезоне 1991/92 был изменён формат турнира[1] и после стадии 1/8 финала игрались групповые турниры. Тогда же появились гимн и эмблема. С сезона 1992/93 турнир получил своё нынешнее название.
+
+Победителем турнира становились 22 клуба, 12 из них выигрывали турнир более одного раза. Испанские клубы одерживали в турнире 19 побед. Рекордсменом по числу выигранных титулов является «Реал Мадрид», побеждавший в турнире 14 раз. С момента смены названия и формата турнира в 1992 году только «Реал Мадрид» смог выиграть Лигу чемпионов на протяжении трёх сезонов подряд (2015/2016, 2016/2017, 2017/2018). «Реал Мадрид» является клубом, который наибольшее количество раз выиграл Лигу чемпионов после смены формата — 8 раз.
+
+Действующим победителем турнира является английский «Манчестер Сити», завоевавший трофей в сезоне 2022/2023 впервые в своей истории 
+</p>
+    </div>
+    <div id="teamsTab" class="tab-content" style="display: none;">
+      <h2 style="text-align:center;">Команды</h2>
+      <div style="margin-left: auto;
+      margin-right: auto;
+      width: 450px;">
+      <h3 style="text-align:center;">Барселона</h3>
+      <p>Барселона - испанский футбольный клуб из города Барселона, выступающий в Ла Лиге. Клуб был основан в 1899 году и является одним из самых успешных и популярных клубов в мире.</p>
+      <img src="barcelona.jpg" alt="Барселона" width="400">
+    </div>
+     <div style="margin-left: auto;
+     margin-right: auto;
+     width: 450px;"> 
+    <h3>Ливерпуль</h3>
+      <p>Ливерпуль - «Ливерпу́ль» — английский профессиональный футбольный клуб из одноимённого города, расположенного в графстве Мерсисайд. 
+        Был основан в 1892 году; в следующем году вступил в Футбольную лигу Англии. 
+        С момента своего создания проводит домашние игры на стадионе «Энфилд».</p>
+        <img src="liver.jpg" alt="Ливерпуль" width="400">
+      </div>
+    </div>
+
+    <div id="playersTab" class="tab-content" style="display: none;">
+      <h2>Игроки</h2>
+      <p>Здесь будет информация об игроках</p>
+      <button class="playersBtn">Add</button>
+    </div>
+
+    <div id="tableTab" class="tab-content" style="display: none;">
+      <h2>Таблица</h2>
+      <div class="table-group">
+        <h3>Группа A</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Место</th>
+              <th>Команда</th>
+              <th>Игры</th>
+              <th>Победы</th>
+              <th>Ничьи</th>
+              <th>Поражения</th>
+              <th>Голы</th>
+              <th>Очки</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Манчестер Сити</td>
+              <td>6</td>
+              <td>5</td>
+              <td>0</td>
+              <td>1</td>
+              <td>15:4</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>ПСЖ</td>
+              <td>6</td>
+              <td>4</td>
+              <td>0</td>
+              <td>2</td>
+              <td>13:6</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Лейпциг</td>
+              <td>6</td>
+              <td>2</td>
+              <td>1</td>
+              <td>3</td>
+              <td>9:12</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Брюгге</td>
+              <td>6</td>
+              <td>0</td>
+              <td>1</td>
+              <td>5</td>
+              <td>4:18</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-group">
+        <h3>Группа B</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Место</th>
+              <th>Команда</th>
+              <th>Игры</th>
+              <th>Победы</th>
+              <th>Ничьи</th>
+              <th>Поражения</th>
+              <th>Голы</th>
+              <th>Очки</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Реал Мадрид</td>
+              <td>6</td>
+              <td>5</td>
+              <td>1</td>
+              <td>0</td>
+              <td>12:2</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Интер</td>
+              <td>6</td>
+              <td>3</td>
+              <td>1</td>
+              <td>2</td>
+              <td>8:8</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Шахтер Донецк</td>
+              <td>6</td>
+              <td>1</td>
+              <td>1</td>
+              <td>4</td>
+              <td>6:11</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Шериф</td>
+              <td>6</td>
+              <td>1</td>
+              <td>1</td>
+              <td>4</td>
+              <td>4:10</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-group">
+        <h3>Группа C</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Место</th>
+              <th>Команда</th>
+              <th>Игры</th>
+              <th>Победы</th>
+              <th>Ничьи</th>
+              <th>Поражения</th>
+              <th>Голы</th>
+              <th>Очки</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Бавария</td>
+              <td>6</td>
+              <td>5</td>
+              <td>1</td>
+              <td>0</td>
+              <td>20:3</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Аякс</td>
+              <td>6</td>
+              <td>3</td>
+              <td>2</td>
+              <td>1</td>
+              <td>11:6</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Спортинг</td>
+              <td>6</td>
+              <td>2</td>
+              <td>1</td>
+              <td>3</td>
+              <td>5:13</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Бешикташ</td>
+              <td>6</td>
+              <td>0</td>
+              <td>2</td>
+              <td>4</td>
+              <td>4:14</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-group">
+        <h3>Группа D</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Место</th>
+              <th>Команда</th>
+              <th>Игры</th>
+              <th>Победы</th>
+              <th>Ничьи</th>
+              <th>Поражения</th>
+              <th>Голы</th>
+              <th>Очки</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Ливерпуль</td>
+              <td>6</td>
+              <td>4</td>
+              <td>2</td>
+              <td>0</td>
+              <td>9:2</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Порту</td>
+              <td>6</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>7:7</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Атлетико Мадрид</td>
+              <td>6</td>
+              <td>1</td>
+              <td>3</td>
+              <td>2</td>
+              <td>4:6</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Милан</td>
+              <td>6</td>
+              <td>0</td>
+              <td>3</td>
+              <td>3</td>
+              <td>2:7</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-group">
+        <h3>Группа E</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Место</th>
+              <th>Команда</th>
+              <th>Игры</th>
+              <th>Победы</th>
+              <th>Ничьи</th>
+              <th>Поражения</th>
+              <th>Голы</th>
+              <th>Очки</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Манчестер Юнайтед</td>
+              <td>6</td>
+              <td>5</td>
+              <td>1</td>
+              <td>0</td>
+              <td>16:5</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Вильярреал</td>
+              <td>6</td>
+              <td>3</td>
+              <td>1</td>
+              <td>2</td>
+              <td>8:8</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Аталанта</td>
+              <td>6</td>
+              <td>2</td>
+              <td>0</td>
+              <td>4</td>
+              <td>7:11</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Янг Бойз</td>
+              <td>6</td>
+              <td>1</td>
+              <td>0</td>
+              <td>5</td>
+              <td>5:14</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="statsTab" class="tab-content" style="display: none;">
+      <div style="margin-left: auto;
+      margin-right: auto;
+      width: 450px;font-size: x-large;">
+      <h2>Статистика</h2>
+      <p>Здесь будет представлена статистика турнира.</p>
+      <h3>Бомбардиры</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Лионель Месси
+              (Барселона)
+            </th>
+            <th>10 голов</th>
+          </tr>
+          <img src="messi.jpg" alt="Барселона" width="250">
+        </thead>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Эрлинг Холланд
+              (Манчестер Сити)
+            </th>
+            <th>7 голов</th>
+          </tr>
+          <img src="hol.jpg" alt="Манчестер Сити" width="250">
+        </thead>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Киллиан Мбаппе
+              (ПСЖ)
+            </th>
+            <th>6 голов</th>
+          </tr>
+          <img src="mbappe.jpg" alt="ПСЖ" width="250">
+        </thead>
+      </table>
+    </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="white_sqr">
+  
+    </div>
+    <div class="modelWindow">
+      <h2>
+      Добавить статью
+      </h2>
+      <div class="modelProperties">
+        
+        <input type="file" name="photo" accept="image/*">
+        <input type="submit" value="Загрузить">
+        <input class="name_in">
+        <input class="surname_in">
+        <button>Добавить статью</button>
+      </div>
+  </div>
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+</body>
+</body>
+
+</html>
